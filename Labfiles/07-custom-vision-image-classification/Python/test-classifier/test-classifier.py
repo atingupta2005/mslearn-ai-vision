@@ -7,7 +7,7 @@ def main():
 
     try:
         # Get Configuration Settings
-        load_dotenv()
+        load_dotenv(~/.env)
         prediction_endpoint = os.getenv('PredictionEndpoint')
         prediction_key = os.getenv('PredictionKey')
         project_id = os.getenv('ProjectID')

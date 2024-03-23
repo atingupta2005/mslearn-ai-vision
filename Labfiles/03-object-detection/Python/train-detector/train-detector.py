@@ -12,7 +12,7 @@ def main():
 
     try:
         # Get Configuration Settings
-        load_dotenv()
+        load_dotenv(~/.env)
         training_endpoint = os.getenv('TrainingEndpoint')
         training_key = os.getenv('TrainingKey')
         project_id = os.getenv('ProjectID')
