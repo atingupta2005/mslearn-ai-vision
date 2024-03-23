@@ -241,7 +241,7 @@ one of the features of the **Azure AI Vision SDK** is to read text from an image
     
     # Draw line bounding polygon
     if drawLinePolygon:
-        draw.polygon(bounding_polygon, outline=color, width=3)
+        draw.polygon(bounding_polygon, outline=color)
     ```
 
 6. In the **read-text/images** folder, select **Lincoln.jpg** to view the file that your code processes.
@@ -335,7 +335,7 @@ one of the features of the **Azure AI Vision SDK** is to read text from an image
     
         # Draw word bounding polygon
         drawLinePolygon = False
-        draw.polygon(bounding_polygon, outline=color, width=3)
+        draw.polygon(bounding_polygon, outline=color)
     ```
 
 15. Save your changes and return to the integrated terminal for the **read-text** folder, and enter the following command to run the program:

@@ -88,12 +88,12 @@ def GetTextRead(image_file):
 
                 # Draw word bounding polygon
                 drawLinePolygon = False
-                draw.polygon(bounding_polygon, outline=color, width=3)
+                draw.polygon(bounding_polygon, outline=color)
 
 
             # Draw line bounding polygon
             if drawLinePolygon:
-                draw.polygon(bounding_polygon, outline=color, width=3)
+                draw.polygon(bounding_polygon, outline=color)
 
             
         # Save image
