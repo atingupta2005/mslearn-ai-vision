@@ -14,7 +14,7 @@ def main():
         # Get Configuration Settings
         dotenv_path = os.path.expanduser('~/.env') 
 
-load_dotenv(dotenv_path)
+        load_dotenv(dotenv_path)
         cog_endpoint = os.getenv('AI_SERVICE_ENDPOINT')
         cog_key = os.getenv('AI_SERVICE_KEY')
 

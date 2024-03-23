@@ -12,7 +12,7 @@ def main():
         # Get Configuration Settings
         dotenv_path = os.path.expanduser('~/.env') 
 
-load_dotenv(dotenv_path)
+        load_dotenv(dotenv_path)
         prediction_endpoint = os.getenv('PredictionEndpoint')
         prediction_key = os.getenv('PredictionKey')
         project_id = os.getenv('ProjectID')

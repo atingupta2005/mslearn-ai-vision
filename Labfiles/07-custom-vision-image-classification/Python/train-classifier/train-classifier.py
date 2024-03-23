@@ -13,7 +13,7 @@ def main():
         # Get Configuration Settings
         dotenv_path = os.path.expanduser('~/.env') 
 
-load_dotenv(dotenv_path)
+        load_dotenv(dotenv_path)
         training_endpoint = os.getenv('TrainingEndpoint')
         training_key = os.getenv('TrainingKey')
         project_id = os.getenv('ProjectID')
