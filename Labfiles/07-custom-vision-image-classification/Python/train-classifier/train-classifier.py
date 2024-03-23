@@ -11,7 +11,9 @@ def main():
 
     try:
         # Get Configuration Settings
-        load_dotenv("~/.env")
+        dotenv_path = os.path.expanduser('~/.env') 
+
+load_dotenv(dotenv_path)
         training_endpoint = os.getenv('TrainingEndpoint')
         training_key = os.getenv('TrainingKey')
         project_id = os.getenv('ProjectID')

@@ -12,7 +12,9 @@ def main():
 
     try:
         # Get Configuration Settings
-        load_dotenv("~/.env")
+        dotenv_path = os.path.expanduser('~/.env') 
+
+load_dotenv(dotenv_path)
         cog_endpoint = os.getenv('AI_SERVICE_ENDPOINT')
         cog_key = os.getenv('AI_SERVICE_KEY')
 
